@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    image: movie-recommender:dev
+    volumes:
+      - ./data:/home/app/app/data
+      - ./experiments/runs:/home/app/app/experiments/runs
+      - ./src:/home/app/app/src
+    ports:
+      - "8501:8501"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - DATA_PATH=/home/app/app/data
+    command: bash -lc "streamlit run demo/streamlit_app.py --server.port 8501 --server.headless true"
