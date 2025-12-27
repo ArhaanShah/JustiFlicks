@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
   UI[User Input: user id, history, preferences]
   UI --> CG[Movie Candidate Generation]
@@ -24,3 +25,4 @@ flowchart TD
 
   TOPK --> EXPLAINER[LLM Explainer:
    gives explanation for recs]
+```

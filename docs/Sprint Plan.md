@@ -19,13 +19,13 @@
 
 ---
 
-## Sprint 1: EDA
+## Sprint 1: Preprocessing & EDA
 
 **Objectives:** gather data, assess coverage and cold-start.
 
 **Key tasks:**
 
-- Fetch MovieLens and TMDB metadata, posters, user reviews (cache results).
+- Fetch and process MovieLens and TMDB metadata, posters, user reviews (cache results).
 - Run EDA on sparsity, rating distribution, poster/synopsis/cast data coverage, cold-start fraction.
 - Slice based EDA
 - Produce a short data inventory and issue log.
@@ -41,7 +41,7 @@
 **Key tasks:**
 
 - Implement matrix factorization or LightFM (classic baseline).
-- Implement NeuMF (neural baseline) and compare metrics.
+- Implement NeuMF for CF only as well as for merged movie dataset (neural baseline) and compare metrics.
 - Create train/val/test splits and compute Recall\@K, NDCG\@K, MAP.
 - Build preprocessing pipelines & logging.
 - Save baseline configs and results.

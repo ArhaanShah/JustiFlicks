@@ -1,0 +1,2 @@
+# Treat CSV files as data, not source code
+*.csv linguist-generated=true

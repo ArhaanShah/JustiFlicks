@@ -1,5 +1,8 @@
 # Dataset Licensing:
 
+The movie data for merged TMDb+IMDb has been sourced from Kaggle, contributed by Tejas Garg.
+* [https://www.kaggle.com/datasets/ggtejas/tmdb-imdb-merged-movies-dataset?resource=download](https://www.kaggle.com/datasets/ggtejas/tmdb-imdb-merged-movies-dataset?resource=download)
+
 ## MovieLens (GroupLens)
 
 The MovieLens datasets are provided by the GroupLens Research Group at the University of Minnesota. Usage is governed by the terms included in each dataset’s accompanying README and license files. The datasets are made available for research, education, and development purposes. Redistribution of the original dataset files is restricted unless explicit permission is granted.
