@@ -1,0 +1,52 @@
+# Main configuration for JustiFlicks baseline CF pipeline
+# Mirrors CFG from notebooks/01_baseline_cf.py
+
+# Paths (relative to project root or absolute)
+data_root: "data/processed"
+embedding_root: "embeddings"
+artifact_root: "artifacts"
+
+# Evaluation thresholds
+rating_threshold: 4.5
+k_values: [5, 10, 20]
+
+# Random seed for reproducibility
+seed: 34
+
+# Per-user chronological split parameters
+n_test: 5
+n_val: 5
+min_pos: 1
+
+# Model-specific hyperparameters
+MF:
+  embedding_dim: 32
+  batch_size: 4096
+  learning_rate: 0.001
+  lambda_item: 0.0001
+  lambda_bias: 0.000001
+  max_epochs: 30
+  patience: 3
+  min_delta: 0.0001
+  alpha: 0.75
+
+implicitBPR:
+  factors: 64
+  learning_rate: 0.01
+  regularization: 0.0001
+  max_epochs: 30
+  patience: 3
+  min_delta: 0.0001
+  alpha: 0.75
+
+twoTower:
+  hidden_dims: [256, 128]
+  emb_dim: 64
+  dropout: 0.2
+  batch_size: 4096
+  learning_rate: 0.001
+  weight_decay: 0.00001
+  temperature: 0.07
+  max_epochs: 100
+  patience: 30
+  min_delta: 0.0001

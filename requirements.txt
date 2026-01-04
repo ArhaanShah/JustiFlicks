@@ -1,2 +1,6 @@
 pandas
 pyarrow
+pytest
+numpy
+torch
+pyyaml

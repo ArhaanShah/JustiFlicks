@@ -1,0 +1,10 @@
+# Reproducibility configuration for JustiFlicks baseline CF pipeline
+# Used for reproducibility_eval command
+
+seeds: [34, 35, 36]
+sample_frac: 0.1
+min_users: 10000
+max_users: 50000
+k: 10
+
+default_config: "configs/default.yaml"

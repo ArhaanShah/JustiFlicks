@@ -1,6 +1,16 @@
 data/raw/
 data/processed/
 
+artifacts/**
+!artifacts/**/*.json
+!artifacts/**/slices_long.csv
+
+embeddings/
+*.npy
+*.npz
+*.pt
+*.pth
+
 
 
 
